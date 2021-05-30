@@ -4,10 +4,8 @@ var enlaces = [];
 
 enlaces[0] = 'https://ciudad1a1.files.wordpress.com/2013/09/botella_pet13.jpg';
 enlaces[1] = 'https://www.heb.com.mx/media/catalog/product/cache/c53365f59daab819cdc02670afde8677/6/7/679518_463454914.jpg';
-enlaces[2] = 'https://www.construnario.com/notiweb/noticias_imagenes/48000/48192_1.jpg';
-enlaces[3] = 'https://dbdzm869oupei.cloudfront.net/img/wallpaper/large/5d9dac466c1db.jpg';
-enlaces[4] = 'https://coprocesamiento.org/wp-content/uploads/2018/09/Plastic-bottles.jpg';
-enlaces[5] = 'https://tapasrioja.com/7078-large_default/botella-de-vidrio-750-ml-mod-frescor.jpg';
+enlaces[2] = 'https://dbdzm869oupei.cloudfront.net/img/wallpaper/large/5d9dac466c1db.jpg';
+enlaces[3] = 'https://coprocesamiento.org/wp-content/uploads/2018/09/Plastic-bottles.jpg';
 
 var direccion = 'https://serviciovisionnorte.cognitiveservices.azure.com/vision/v3.0/analyze?visualFeatures=Categories,Description,Objects,Tags';
 
@@ -46,6 +44,6 @@ function imprimirDatos( datosRespuesta , cont ){
 
 }
 
-for( var i = 0; i < 6 ; i++ ){
+for( var i = 0; i < 4 ; i++ ){
     peticion( i , imprimirDatos );
 }
